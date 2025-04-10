@@ -2,14 +2,14 @@
 id: root
 title: root
 desc: ""
-updated: 1744295398724
+updated: 1744297423669
 created: 1595961348801
 ---
 # All Vault Main Roots
 
 - [[tech]]
-- [[todo]]
-- 
+- [[random]]
+  
 # Things to keep in mind
 
 ## Why do you write notes?
