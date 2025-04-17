@@ -2,19 +2,23 @@
 id: t0yvnhsrmdo1z5fu5vuaa2r
 title: Daily Journal Template
 desc: ''
-updated: 1744289122819
+updated: 1744632756574
 created: 1744266877829
 ---
-# Habits
 
-## 
+# Remember, your brain is like a factory that takes inputs and produce outputs. Your goal is to have the most valuable input to produce the most valuable output. After deep thinking, you realized that here are approximately all the possible inputs:
+- Learning
+- Projects
+- Habits
+- Religion
+- Bad Habits
+- Work
+- Social
+- Health
+- Enviorment
+- Organising thoughts
 
-
-## Morning
-
-<!-- Fill out this section after waking up -->
-
-### Gratitude
+# Gratitude
 
 I am grateful for:
 
@@ -22,26 +26,9 @@ I am grateful for:
 2.
 3.
 
-### What would make today great?
+# What you will be focus on doing today?
 
-1.
-2.
-3.
 
-### Daily affirmations
+# What's on your mind? Organise your thoughts!
 
-I am...
-
-## Evening
-
-<!-- Fill out this section before going to sleep, reflecting on your day -->
-
-### Amazing things that happened today
-
-1.
-2.
-3.
-
-### How could I have made today even better?
-
-I could have made today better by
+# Gym Tracking:
