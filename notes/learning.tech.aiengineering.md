@@ -2,47 +2,63 @@
 id: j8n7h2if1c9beltgij24osq
 title: Aiengineering
 desc: ''
-updated: 1744554285957
+updated: 1745519136033
 created: 1744545671363
 ---
 
+# -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+# Questions
+- Whats AI Engineering?
+- Whats the difference between AI Engineering and ML Engineering?
+- Whats a language model?
+- What are tokens?
+- Whats the difference between masked and autoregressive language models?
+- Whats special about language models on training?
+- What are foundational models, LLMs and LMMs?
+- How does the transformer architecture works?
+- What are embeddings?
+- Whats the difference between embeddings and queries (in attention mechanism)?
+- Whats the attention mechanism?
+- Whats supervised finetuning (SFT)?
+- Whats self-supervised pretraining?
+- Whats preference finetuning?
+- Whats the difference between pre training, post training?
+- Whats RLHF and is it the same as preference fine funing or part of preference fine tuning?
+- Whats the difference between classification and reinforcement learning in RLHF (preference fine tuning)?
+- Whats the difference between the data in classification and reinforcement learning in RLHF?
+- Is all of RLHF preference fine tuning?
+- Whats comparison data? demonstration data? and the internet data?
+- How does the model learn human preferences?
+- How does the model align with human preferences?
+- Whats the difference between pre-training, post-training (either supervised finetuning (SFT) or preference finetuning)?
+- Post training can be two types, what are they?
+- Whats the difference between transfer learning, say fine tuning, post training?
+- Whats catastrophic forgetting and when does it happen? How can you control this with learning rate or freezing?
+- How can you get part of the model? say you want just the CNN part of efficientNet without the classifier part?
+- What are demosntration data or behavior cloning and in which stage is this being implemented?
+- Are there other techniques for preference fine tuning?
+- Whats pointwise scoring? pairwise? whats the difference?
+- How does comparison data looks like?
+- In preference training (RLHF), and given the compariosn data, how would be train the reward model to give concrete scores?
+- Whats the cost function of the reward model looks like?
+- Can the reward system be trained from scratch or on top of another model?
+- How does the model construct its outputs using sampling? Whats sampling in foundational models?
+- Does sampling makes AI outputs probabilistic, how?
+- What does classification and usually neural network models output? How does this works for a language model?
+- Whats greedy sampling? and why its boring?
+- Whats another method of sampling based on the probabilites of each class?
+- How does the model or the neural network computes the probabilites? what are logits? Whats applied to the logits so that its changed to probabilites?
+- Why are sampling strategies important for the application?
+- What does designing our own sampling strategy requires access to what in the model?
+- Whats the sampling technique 'tempretature' does? how does temperature works in the model?
+- if there's a model that output two logits [1, 2] whats the probabiliy output after softmax would be for both? 
+- Whats higher/lower temperature do?
 
-# What's AI Engineering? 
 
-AI Engineering is the discipline of levering foundational models to build applications. It's a discipline that emerged due to the hard work of machine learning engineers and allowing their models to be open sourced.
+# Training of an LLM!
 
-Previosuly, if someone want to do an app that's dependent on machine learning algorithms, they will have to first do the data science pipelines and then train a model and then build the app. Currently, due to the emergin numbers of open sourced moels, the team can instead use those open sourced models and build the app then fine tune them or decide to build their own models once the idea of the app proved success.
+We start first by scraping internet text data. The model is then trained using self-supervised pretraining, which means there’s no need for human labeling. Instead, the model learns by predicting the next token in a sentence. For example, in the sentence “Marwan is eating an apple,” the training set would include rows like: input = “Marwan”, target = “is”; then input = “Marwan is”, target = “eating”; and so on. This pretraining step uses massive amounts of internet data, which means the model can develop biased, indiscriminate, and even unsafe behaviors. To address that, the model is further trained on higher-quality data from sources like Stack Overflow, Quora, or human-written examples. This stage is called supervised fine-tuning, and it is labeled by humans. It helps the model generate more socially acceptable and helpful responses.
 
-## Whats foundational models, LLMs and LMMs?
-
-Foundational models are models that are already been trained on large dataset for multiple tasks where then they can be used and fine tuned to specific tasks.
-
-LLMs stands for large language models. They are models which uses most likely the **transformers architecture!**. Their purpose is to convey more context from the data so that it can predict the next word correctly.
-
-### How does the transformer architecture works?
-
-The backbone of the transoformers architecture is **the attention mechanism.** Basically, the transformers consists of Input, **embedding** the input, N x attention layers + **MLPs**, + Output layer, and then the output.
-
-
-#### What are embeddings?
-
-Embeddings are matrices to translate the semantic meanings of words. E.g King is close to queen. But embeddings do not convey context in sentences. To do that, we need **attention mechanism** 
-
-
-#### Whats the difference between embeddings and queries (in the attention mechanism)?
-Basically, the embedding after the input provide the global semantic meaning of the word to other words. For example, bank is related to finance. This is in a very generic way where you can think of it as there's a global dictionary where we can compare the word to all other words.
-
-The query instead focus on the semantic meaning in the sentence itself. It kinda applies the same thing as the embedding but locally.
-
-#### Whats the attention mechanism?
-
-The attention mechanism consist of three elements:
-1- The Query (Q)
-2- The Key (K)
-3- The Value (V)
-
-Imagine one of the input embedded was: Marwan is learning AI Engineering.
-
-First, there's a query matrix. Each word in the input example, would have a column. This column is 
+After supervised fine-tuning, the model is used to generate responses to a set of prompts. These responses are then used in preference training, which means we’re training the model to better align with specific applications and human-preferred answers. Preference training consists of the entire Reinforcement Learning from Human Feedback (RLHF) pipeline. RLHF has two phases. The first is the classification phase, where humans rank multiple responses generated by the supervised fine-tuned model. These rankings are used to train a reward model that learns to give a score to each response. Then comes the reinforcement learning phase, where we use that reward model to guide the final LLM. In this phase, prompts are sampled, the supervised fine-tuned model generates a response, and the reward model assigns it a score. The (prompt, response, reward) triplet is then passed to a reinforcement learning algorithm — usually PPO — which updates the model’s weights to make it more likely to generate responses with higher reward scores.
 
 

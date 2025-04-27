@@ -14,6 +14,7 @@ created: 1744453411599
 	•	Allow LLMs to spawn child LLMs with inherited traits (like AI descendants!).
 	•	Enable cross-LLM negotiation, e.g., “Summarize this decision between LLM_A and LLM_B based on both of their knowledge.”
 - An idea where you can allow the user to delete some of the messages and replies so that the user can control the context window of the models
+- Quick chat to ask random question instead of openning new chats for random questions while working
 
 
 # Parent node and human: the user can set the percentage of focus and memory of an LLM

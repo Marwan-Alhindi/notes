@@ -14,7 +14,7 @@ created: 1744368768156
 - [[Pandas|learning.tech.pandas]]
 - [[Problems|learning.tech.problems]]
 - [[Python|learning.tech.python]]
-- [[Pytorch|learning.tech.pytorch]]
+- [[Tensorflow|learning.tech.tensorflow]]
 - [[React|learning.tech.react]]
 - [[Scikit Learn|learning.tech.scikit-learn]]
 - [[Tailwind|learning.tech.tailwind]]

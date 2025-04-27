@@ -19,7 +19,13 @@
         "editor.suggest.snippetsPreventQuickSuggestions": false,
         "editor.suggest.showSnippets": true,
         "editor.tabCompletion": "on",
-        "dendron.enableSelfContainedVaultWorkspace": true
+        "dendron.enableSelfContainedVaultWorkspace": true,
+        "github.copilot.enable": {
+            "*": true,
+            "plaintext": false,
+            "markdown": false,
+            "scminput": false
+        }
     },
     "extensions": {
         "recommendations": [
