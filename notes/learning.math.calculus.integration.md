@@ -2,7 +2,7 @@
 id: rmwx0pxzh0uye6qxcft4m1k
 title: Integration
 desc: ''
-updated: 1745956130414
+updated: 1746006142195
 created: 1745953169113
 ---
 
@@ -31,6 +31,8 @@ created: 1745953169113
 - Misconception: Do you actually take the derivative when you say dg/dx or you take the function as it is? Do you take the derivative or the integral for g?
 - Misconception: Do you do a cross multiplication to figure out whats inside the integral? or?
 - What do you must do when there's logarithmic and you need to apply integration by parts?
+- What do you do when there's a repeating patterns when you keep doing integration by parts?
+- What do you do when you have sin^2(x) in the integral?
 
 
 # Integration by subsitution and by parts
