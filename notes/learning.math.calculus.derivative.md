@@ -6,10 +6,12 @@ updated: 1745953192970
 created: 1745953190354
 ---
 
+# do you need dx, how do you think about derivatives as differentials!?
+- Whats d(x^2 - 1)?
 
 # Derivative
 - Mention the concept of the derivative mathematically and in plain english
-- 
+- How do you think about derivatives as distances in x and y?
 # General derivative
 - Whats the derivative of each: ![alt text](image-23.png)
 - 

@@ -9,6 +9,9 @@ created: 1745953169113
 
 # Conceptual Questions
 - Describe the concept of integation?
+- Does integration tells you what happened at a point? What about derivatives?
+- Why not use just the sum term in mathematics? why do we need to use a new term for integration?
+- What does the answers of integration means? What does + C represents?
 - How's integration related to differentation?
 - Does integration always means the area under the curve?
 - Why there's dx, dy in the integral?

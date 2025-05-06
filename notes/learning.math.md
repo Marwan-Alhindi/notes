@@ -10,3 +10,7 @@ created: 1745756680925
 - ![[Calculus|learning.math.calculus]]
 - ![[Linearalgebra|learning.math.linearalgebra]]
 - ![[Statsandprobs|learning.math.statsandprobs]]
+
+# MATHEMATICS IS THE LANGUAGE OF PERSPECTIVES!
+- The more you see concepts in different perspectives, the more you understand them better!
+- 
