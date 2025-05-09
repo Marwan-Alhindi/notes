@@ -1,11 +1,10 @@
 ---
-id: 9yhh56tlh5vt7f6s5l7s2v6
-title: traversal
+id: ulpg0hclmnyz38g1pkjfqb9
+title: traversa
 desc: ''
-updated: 1746543250972
-created: 1746446085496
+updated: 1746543290884
+created: 1746541711016
 ---
-
 
 - Whats traversal?
 - Is it related to bfs/dfs, and how?
