@@ -2,7 +2,7 @@
 id: vgc9r9yl616jd8h6ldmfdma
 title: dfs
 desc: ''
-updated: 1746791538392
+updated: 1746959306990
 created: 1746533904527
 ---
 
@@ -35,3 +35,14 @@ graph = {
 
 dfs(graph, 'A')
 ```
+
+## 🕒 Time Complexity of DFS (Depth-First Search)
+
+### 🧠 What is DFS?
+- A graph traversal algorithm that explores as far as possible along each branch before backtracking.
+- Can be implemented **recursively** or using a **stack**.
+
+---
+
+### ✅ Time Complexity:
+O(V + E)

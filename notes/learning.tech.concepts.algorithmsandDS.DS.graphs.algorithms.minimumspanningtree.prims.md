@@ -2,7 +2,7 @@
 id: cvszjwibsxl9oj2h71rx79w
 title: prims
 desc: ''
-updated: 1746534417574
+updated: 1746959132355
 created: 1746533699995
 ---
 
@@ -45,3 +45,20 @@ graph = {
 
 print(prim(graph, 'A'))
 ```
+
+## 🕒 Time Complexity of Prim’s Algorithm
+
+The complexity depends on the data structure used for the **priority queue** and the **graph representation**:
+
+| Graph Representation        | Priority Queue     | Time Complexity      |
+|-----------------------------|--------------------|----------------------|
+| Adjacency Matrix            | No heap (array)    | O(V²)                |
+| Adjacency List              | Binary Heap        | O(E log V)           |
+| Adjacency List              | Fibonacci Heap     | O(E + log V)         |
+
+---
+
+### 📌 Notes:
+- `V` = number of vertices
+- `E` = number of edges
+- In competitive programming or most real-world scenarios, `O(E log V)` with a binary heap is most common.

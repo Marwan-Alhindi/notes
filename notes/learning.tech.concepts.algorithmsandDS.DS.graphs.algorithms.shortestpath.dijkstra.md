@@ -2,7 +2,7 @@
 id: mhiwla520zs4qwgnz0emxs6
 title: dijkstra
 desc: ''
-updated: 1746791873902
+updated: 1746959274125
 created: 1746533967784
 ---
 
@@ -46,3 +46,31 @@ graph = {
 }
 
 print(dijkstra(graph, 'A'))
+
+## 🕒 Time Complexity of Dijkstra’s Algorithm
+
+### 🧠 What is Dijkstra’s Algorithm?
+- Finds the **shortest path** from a source node to all other nodes in a **graph with non-negative edge weights**.
+
+---
+
+### ✅ Time Complexity Based on Implementation
+
+| Graph Representation        | Priority Queue     | Time Complexity      |
+|-----------------------------|--------------------|----------------------|
+| Adjacency Matrix            | No heap (array)    | O(V²)                |
+| Adjacency List              | Binary Heap        | O((V + E) log V)     |
+| Adjacency List              | Fibonacci Heap     | O(E + V log V)       |
+
+---
+
+### 📌 Parameters:
+- `V` = number of vertices
+- `E` = number of edges
+- **Binary Heap** (e.g., using `heapq` in Python) is most commonly used in practice.
+
+---
+
+### 🚫 Limitations:
+- Does **not** work with **negative edge weights**.
+- For graphs with negative weights, use **Bellman-Ford Algorithm** instead.

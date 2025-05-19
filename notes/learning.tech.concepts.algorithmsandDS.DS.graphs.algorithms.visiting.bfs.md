@@ -2,7 +2,7 @@
 id: tek5kje4wfcinh7wbracp9z
 title: bfs
 desc: ''
-updated: 1746791526137
+updated: 1746959324449
 created: 1746533754574
 ---
 https://www.youtube.com/watch?v=HZ5YTanv5QE
@@ -43,3 +43,14 @@ graph = {
 
 bfs(graph, 'A')
 ```
+
+## 🕒 Time Complexity of BFS (Breadth-First Search)
+
+### 🧠 What is BFS?
+- A graph traversal algorithm that explores all neighbors level-by-level.
+- Implemented using a **queue** (FIFO).
+
+---
+
+### ✅ Time Complexity:
+O(V + E)

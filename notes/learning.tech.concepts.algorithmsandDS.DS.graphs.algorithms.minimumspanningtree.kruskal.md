@@ -2,7 +2,7 @@
 id: nwicd05v34oj3d1qs20kpl7
 title: kruskal
 desc: ''
-updated: 1746534205749
+updated: 1746959182147
 created: 1746533874540
 ---
 
@@ -46,5 +46,13 @@ def kruskal(edges, n):
 
     return mst_weight, mst_edges
 ```
+## 🕒 Time Complexity of Kruskal’s Algorithm
 
+### Main Steps:
+1. Sort all edges → O(E log E)
+2. Iterate through edges and use Union-Find (Disjoint Set Union, DSU) to detect cycles → near O(1) per operation with path compression
 
+---
+
+### ✅ Overall Time Complexity:
+O(E log E)

@@ -2,7 +2,7 @@
 id: t71pgy7oho37eo0ru69e9yy
 title: topologicalsort
 desc: ''
-updated: 1746535481027
+updated: 1746959362237
 created: 1746446241637
 ---
 
@@ -49,3 +49,13 @@ graph = {
 order = topological_sort(graph)
 print("Topological Order:", order)
 ```
+
+## 🔃 Topological Sort – Cheat Sheet
+
+### 🧠 What is Topological Sort?
+- A **linear ordering** of vertices in a **Directed Acyclic Graph (DAG)** such that for every directed edge `u → v`, `u` comes **before** `v` in the ordering.
+
+---
+
+### ✅ Time Complexity:
+O(V + E)
