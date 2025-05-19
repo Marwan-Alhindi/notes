@@ -2,7 +2,7 @@
 id: ccl7j141zrlwyhjx8dr1wgm
 title: Linearalgebra
 desc: ''
-updated: 1745947814541
+updated: 1747686765497
 created: 1745756915193
 ---
 
@@ -16,7 +16,6 @@ created: 1745756915193
   - How can you find the unit vector of a general vector using cos of angels?
 - Why do we use dot product? Whats the resulting scaler means? Can u give an example of this using LLMs architecture?
 - How can you find the minimum seperation between two lines? Solve the following example: ![alt text](image-8.png)
-
 
 
 1. Vectors #Red
