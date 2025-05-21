@@ -2,7 +2,7 @@
 id: bd3r4sep9stkixaw7xsympb
 title: React3fiber
 desc: ''
-updated: 1747669347513
+updated: 1747767638765
 created: 1747655657221
 ---
 
@@ -30,3 +30,7 @@ created: 1747655657221
 - How do you use tailwind with react? give me an example of how to resize the canvas in tailwind?
 - How do you give redefine the parameters for the components?
 - What are the main things that you can do to shapes? i.e scale and...?
+- How to animate? Whats useFrame? and how to use it? 
+- Whats a reference? and how to use it?
+- Every computer render frames in different speed and so the animation will be different.. how do you make it responsive to all devices? 
+- For threejs components like OrbitControls, how to use it inside react? What about drei? 
