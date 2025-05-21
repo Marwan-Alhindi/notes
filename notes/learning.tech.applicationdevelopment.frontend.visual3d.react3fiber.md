@@ -2,7 +2,7 @@
 id: bd3r4sep9stkixaw7xsympb
 title: React3fiber
 desc: ''
-updated: 1747767638765
+updated: 1747858360887
 created: 1747655657221
 ---
 
@@ -33,4 +33,64 @@ created: 1747655657221
 - How to animate? Whats useFrame? and how to use it? 
 - Whats a reference? and how to use it?
 - Every computer render frames in different speed and so the animation will be different.. how do you make it responsive to all devices? 
-- For threejs components like OrbitControls, how to use it inside react? What about drei? 
+- For threejs components like OrbitControls, how to use it inside react? What about drei?
+
+# Camera, Rotation & Position
+- Where does the camera always look at by default?
+- When you change the position of the camera, what happens to the objects coordinate system when you rotate them?
+- Where does the light looks at?
+
+
+
+ # Lesson 1:
+ - useRef
+ - useFrame
+ - mesh: geometry + material
+   - position
+   - rotation
+   - scale
+ - camera
+   - position
+ - group
+ - extend
+ - OrbitControls
+ - useThree
+ - directional light
+ - ambient light
+ - CustomObjects
+ - Float32Array
+ - Triangles, vertices and three values per vertex
+ - buffer geometry, buffer attribute, attaching buffer attribute to geometry
+   - attributes-position == geometry attribute.position.
+   - count, itemsSize and array positions
+ - DoubleSide to material
+ - useMemo 
+ - difference between useMemo and useState
+ - computeVertexNormals (you must use it with useEffect)
+ - useEffect
+ - Canvas camera
+   - fov,near, far and positions, zoom
+ - Canvas orthographic
+ - Animating Canvas camera (rotating)
+   - state.clock.elapsedTime (from useFrame)
+   - Trigonometry to rotate the camera 
+   - camera.lookAt(0,0,0)
+ - Canvas antialias
+ - toneMapping
+   - Canvas flat color
+   - CineonToneMapping
+   - ACESFilmicToneMapping
+ - outputEncoding or (outputColorSpace)
+   - LinearEncoding
+   - sRGBEncoding
+ - background color (from css)
+ - Pixel Ratio
+   - dpr
+
+# Lesson 2
+- Drei
+- https://drei.docs.pmnd.rs/getting-started/introduction
+- Orbitcontrols and damping
+- TransformControls
+  - Center of a mesh instead of center of the scene - two solutions: reference and positioning
+- 
