@@ -2,7 +2,7 @@
 id: bd3r4sep9stkixaw7xsympb
 title: React3fiber
 desc: ''
-updated: 1747858360887
+updated: 1747860594605
 created: 1747655657221
 ---
 
@@ -90,7 +90,60 @@ created: 1747655657221
 # Lesson 2
 - Drei
 - https://drei.docs.pmnd.rs/getting-started/introduction
-- Orbitcontrols and damping
+
+## Controls
+- Orbitcontrols, damping and makeDefault
 - TransformControls
   - Center of a mesh instead of center of the scene - two solutions: reference and positioning
+  - Translate, scale and rotate
+- Fixing the conflit of OrbitControl and TransformControls
+- PivotControls (for users to control things)
+  - anchor, depthTest
+  - lineWidth
+  - axisColors
+  - scale
+  - perspective (fixed attribute)
+  - How to put it inside the object
+
+
+## Html inside the website!
+- Whats the difference between html and text§
+- how to add style
+  - position
+  - wrapperClass
+  - center
+  - distanceFactor
+  - useRef to disappear the text when blocked by other blocks
+- how to add buttons and p..etc
+
+## Texts!!
+- Text
+  - font
+  - woff is the lighter format
+  - fontSize
+  - color
+  - material
+  - position,rotation and scale
+  - maxWidth
+  - converting font:
+    - https://transfonter.org/
+    - https://www.fontsquirrel.com/tools/webfont-generator
+
+## Minimum distance between a point and a shape
+- SDF
+  -  https://iquilezles.org/articles/distfunctions2d/
+  -  https://iquilezles.org/articles/distfunctions/
+- Since you cant express text mathematically, whats the approach used to have characters?
+
+## Float
+- Float on all objects!
+  - speed
+  - floatIntensity
+
+## MeshReflectorMaterial
+- resolution
+- blur
+- mixBlur
+- mirror
+- color
 - 
